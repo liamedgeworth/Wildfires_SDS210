@@ -1,11 +1,16 @@
 name: bushfires
 channels:
+  - conda-forge
   - defaults
 dependencies:
+  - python=3.12
   - gdal
   - pyogrio
   - jupyterlab
   - pyproj
-  - python=3.12
   - geopandas
-prefix: C:\Users\liame\miniconda3\envs\bushfires
+  - papermill
+  - folium
+  - pandas
+  - requests
+  - numpy
