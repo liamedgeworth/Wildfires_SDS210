@@ -8,6 +8,9 @@ on:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}  # apply to ALL steps at once
 
     steps:
       - name: Checkout repo
@@ -21,11 +24,10 @@ jobs:
           auto-activate: true
 
       - name: Run notebook
-        shell: bash -el {0}
         env:
           FIRMS_API_KEY: ${{ secrets.FIRMS_API_KEY }}
         run: |
-          papermill your_notebook.ipynb your_notebook.ipynb
+          papermill wildfires.ipynb wildfires.ipynb  # ← replace with actual filename
 
       - name: Commit updated outputs
         run: |
