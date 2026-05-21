@@ -35,8 +35,8 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add outputs/australia_bushfire_map.html          
-          git add outputs/bushfire_choropleth.html
-          git add outputs/first_rfs_response_3hrs.html
+          git add Outputs/australia_bushfire_map.html          
+          git add Outputs/bushfire_choropleth.html
+          git add Outputs/first_rfs_response_3hrs.html
           git diff --staged --quiet || git commit -m "Auto-refresh fire map $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
