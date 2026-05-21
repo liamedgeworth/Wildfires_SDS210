@@ -1,1 +1,36 @@
-uodate
+name: Refresh Fire Map
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          activate-environment: bushfires
+          environment-file: environment.yml
+          auto-activate-base: false
+
+      - name: Run notebook
+        shell: bash -el {0}
+        env:
+          FIRMS_API_KEY: ${{ secrets.FIRMS_API_KEY }}
+        run: |
+          papermill your_notebook.ipynb your_notebook.ipynb
+
+      - name: Commit updated outputs
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add bushfire_choropleth.html
+          git diff --staged --quiet || git commit -m "Auto-refresh fire map $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
