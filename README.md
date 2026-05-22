@@ -27,15 +27,16 @@ It is recommended to set up a new environment if downloading and operating this 
 
 # Data
 Three main sources of data are used for this project.
-1. FIRMS API
-  a. This API obtains the satellite fire detection data central to the project. For it to work, a MAP KEY (available from https://firms.modaps.eosdis.nasa.gov/api/map_key/) is required.
+#### FIRMS API
+This API obtains the satellite fire detection data central to the project. For it to work, a MAP KEY (available from https://firms.modaps.eosdis.nasa.gov/api/map_key/) is required.
 
-2. Australian LGA Data
-  a. Available here: https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files/LGA_2025_AUST_GDA2020.zip
+#### Australian LGA Data
+Available here: https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files/LGA_2025_AUST_GDA2020.zip
 
-3. Australian Rural Fire Service (RFS) station locations
-  a. Available from here: https://services.ga.gov.au/gis/rest/services/Emergency_Management_Facilities/MapServer/4
-  b. This is also available as an API if desired.
+#### Australian Rural Fire Service (RFS) station locations
+Available from here: https://services.ga.gov.au/gis/rest/services/Emergency_Management_Facilities/MapServer/4
+
+This is also available as an API if desired.
 
 # Authors
 Liam Edgeworth - liamjosephduffy.edgeworth@uzh.ch
@@ -44,6 +45,6 @@ Liam Edgeworth - liamjosephduffy.edgeworth@uzh.ch
 - 0.1 Initial Release    
 
 # Acknowledgments
-Hendrik Wulf for patient explanations and the code blocks used in SDS210 lessons. The FIRMS API Code Examples were very helpful to set up the API.
+Hendrik Wulf for patient explanations and the code blocks used in SDS210 lessons. The FIRMS API Code Examples were very helpful to set up the API. AI was used to help with debugging and editing.
 
 
