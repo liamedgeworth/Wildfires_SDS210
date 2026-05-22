@@ -20,6 +20,8 @@ A list of dependencies for this project is as follows:
 
 OS used was Windows 11.
 
+GitHub Actions are used to rerun the notebook and refresh the data outputs every three hours.
+
 # Installing
 This project is available from this GitHub repo and can be downloaded and run as long as the required dependencies and data are available. All data paths are relative. 
 
@@ -45,6 +47,6 @@ Liam Edgeworth - liamjosephduffy.edgeworth@uzh.ch
 - 0.1 Initial Release    
 
 # Acknowledgments
-Hendrik Wulf for patient explanations and the code blocks used in SDS210 lessons. The FIRMS API Code Examples were very helpful to set up the API. AI was used to help with debugging and editing.
+Hendrik Wulf and  for patient explanations and the code blocks used in SDS210 lessons. The FIRMS API Code Examples were very helpful to set up the API. AI was used to help with debugging and editing.
 
 
