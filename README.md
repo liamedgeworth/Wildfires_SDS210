@@ -45,6 +45,6 @@ Liam Edgeworth - liamjosephduffy.edgeworth@uzh.ch
 - 0.1 Initial Release    
 
 # Acknowledgments
-Hendrik Wulf for patient explanations and the code blocks used in SDS210 lessons. The FIRMS API Code Examples were very helpful to set up the API.
+Hendrik Wulf for patient explanations and the code blocks used in SDS210 lessons. The FIRMS API Code Examples were very helpful to set up the API. AI was used to help with debugging and editing.
 
 
